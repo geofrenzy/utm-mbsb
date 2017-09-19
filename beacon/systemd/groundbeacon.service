@@ -1,0 +1,16 @@
+[Unit]
+
+Description=start GeoFrenzy Ground Beacon
+
+After=network.target
+After=hostapd.service
+After=gpsd.service
+
+[Service]
+
+ExecStart=/opt/geofrenzy/bin/startgb.sh
+Restart=on-abort
+
+[Install]
+
+WantedBy=default.target

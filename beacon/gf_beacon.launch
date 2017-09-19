@@ -1,0 +1,5 @@
+<launch>
+  <!-- $(anon talker) creates an anonymous name for this node -->
+  <node name="$(anon service)" pkg="gf_beacon" type="gf_beacon_node" respawn="true" />
+</launch>
+
