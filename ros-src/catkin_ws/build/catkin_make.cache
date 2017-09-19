@@ -1,0 +1,2 @@
+gf_beacon
+-DCATKIN_DEVEL_PREFIX=/opt/geofrenzy/src/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/opt/geofrenzy/src/catkin_ws/install -G Unix Makefiles

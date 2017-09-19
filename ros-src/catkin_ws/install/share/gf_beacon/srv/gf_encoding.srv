@@ -1,0 +1,11 @@
+float64 lng_deg
+float64 lat_deg
+float64 alt_agl_m
+float64 speed_mph
+float64 heading_deg
+float64 battery_level
+uint16 flying_state_on
+uint16 return_to_home_state_on
+uint16 forced_landing_state_on
+---
+string encoded

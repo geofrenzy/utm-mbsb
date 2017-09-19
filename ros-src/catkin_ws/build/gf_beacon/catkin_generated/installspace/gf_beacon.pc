@@ -1,0 +1,8 @@
+prefix=/opt/geofrenzy/src/catkin_ws/install
+
+Name: gf_beacon
+Description: Description of gf_beacon
+Version: 0.0.0
+Cflags: -I/opt/geofrenzy/src/catkin_ws/install/include
+Libs: -L/opt/geofrenzy/src/catkin_ws/install/lib 
+Requires: 
