@@ -1,0 +1,12 @@
+[Unit]
+Description=GF scanner radio service
+After=mosquitto.service
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /opt/geofrenzy/groundstation/radiomanager.py
+Restart=always
+
+
+[Install]
+WantedBy=multi-user.target

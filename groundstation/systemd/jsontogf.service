@@ -1,0 +1,12 @@
+[Unit]
+Description=GF tshark json to gf encoding 
+After=mosquitto.service
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /opt/geofrenzy/groundstation/jsontogf.py
+Restart=always
+
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=GF null decoder
+After=mosquitto.service
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /opt/geofrenzy/nodecode.py
+Restart=always
+
+
+[Install]
+WantedBy=multi-user.target

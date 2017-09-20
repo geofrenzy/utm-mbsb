@@ -1,0 +1,12 @@
+[Unit]
+Description=GF 802.11 beacon receiver
+After=mosquitto.service
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /opt/geofrenzy/groundstation/80211beaconreceiver.py
+Restart=always
+
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,7 @@
+/var/log/stratux.log {
+	copytruncate
+	compress
+	size 1M
+	rotate 2
+	missingok
+	}

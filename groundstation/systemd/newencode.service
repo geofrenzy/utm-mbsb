@@ -1,0 +1,12 @@
+[Unit]
+Description=GF null decoder
+After=mosquitto.service
+
+[Service]
+Type=idle
+ExecStart=/opt/geofrenzy/groundstation/newencode
+Restart=always
+
+
+[Install]
+WantedBy=multi-user.target

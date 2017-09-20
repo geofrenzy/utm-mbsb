@@ -1,0 +1,12 @@
+[Unit]
+Description=GF tshark beacon receiver
+After=mosquitto.service
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /opt/geofrenzy/groundstation/tsharktomqtt.py
+Restart=always
+
+
+[Install]
+WantedBy=multi-user.target
